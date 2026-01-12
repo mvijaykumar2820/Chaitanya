@@ -143,11 +143,6 @@ export default function DocumentSummarizer() {
                 content: msg.content
             }));
 
-            // Construct messages for the backend (including system/context instructions if needed, 
-            // though backend could also handle the initial context setup)
-            // Ideally, we just send history + new message + context.
-            // Let's structuring it so the backend receives the full context.
-
             const messages = [
                 {
                     role: 'user',
